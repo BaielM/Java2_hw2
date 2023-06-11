@@ -19,15 +19,15 @@ public class Main {
             case "Football":
                 Football football = new Football("Football", "Ten Hag", 2029, 2, "Baiel");
                 football.print();
-                break;
+                return football;
             case "Basketball":
                 Basketball basketball = new Basketball("Basketball", "Ten Hag", 2018, 121, "Lakers");
                 basketball.print();
-                break;
+                return basketball;
             case "Volleyball":
                 Volleyball volleyball = new Volleyball("Volleyball", "Volleyball couch", 2022, "California", 6);
                 volleyball.print();
-                break;
+                return volleyball;
 
         }
         return null;
