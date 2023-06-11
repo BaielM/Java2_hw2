@@ -1,10 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        createObject("Football");
+        /*createObject("Football");
         createObject("Basketball");
-        createObject("Volleyball");
+        createObject("Volleyball");*/
+        Printable[] sports = new Printable[3];
+        sports[0] = createObject("Football");
+        sports[1] = createObject("Basketball");
+        sports[2] = createObject("Volleyball");
 
+        for (Printable object : sports) {
+            object.print();
+        }
     }
+
 
     public static Sports createObject(String className) {
         switch (className) {
